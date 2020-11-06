@@ -15,3 +15,5 @@ class User(Base):
     date = Column(DateTime, default=datetime.now())
     is_admin = Column(Boolean, default=False)
     is_active = Column(Boolean, default=False)
+
+    # post = relationship("Post", back_populates="user")
